@@ -15,12 +15,12 @@ def hadoopConfig():
 			print("Wait A Min Hadoop is Configuring")
 			x = subprocess.getstatusoutput("pip3 install gdown")
 			if x[0] != 0:
-				y = subprocess.getstatusoutput("pip install gdwon")
+				y = subprocess.getstatusoutput("pip install gdown")
 				if y[0] != 0:
-					os.system("yum install gdwon")
+					os.system("yum install gdown")
 		
-			z = subprocess.getstatusoutput("gdwon --id 17UWQNVdBdGlyualwWX4Cc96KyZhD-lxz ")
-			q = subprocess.getstatusoutput("gdwon --id 1541gbFeGZZJ5k9Qx65D04lpeNBw87rM5 ")
+			z = subprocess.getstatusoutput("gdown --id 17UWQNVdBdGlyualwWX4Cc96KyZhD-lxz ")
+			q = subprocess.getstatusoutput("gdown --id 1541gbFeGZZJ5k9Qx65D04lpeNBw87rM5 ")
 			if z[0] == 0 and q[0] == 0:
 				print("Hadoop Dependencies Downloaded Successfully")
 			else:
