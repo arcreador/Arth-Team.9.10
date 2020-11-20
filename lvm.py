@@ -98,7 +98,7 @@ NOTE : Make Sure You Attachted New Hard Disk While Runnig This Function On Your 
 			elv = input("Enter The Size like(+1G,+1M...) : ")
 			vg = input("Enter The Volume Group Name : ")
 			lv = input("Enter The Logical Volume Name : ")
-			os.system("Extend --size {} /dev/{}/{} ".format(elv,vg,lv))
+			os.system("lvextend --size {} /dev/{}/{} ".format(elv,vg,lv))
 
 		elif int(choice) == 0 :
 			return exit()
