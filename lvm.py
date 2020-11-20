@@ -79,7 +79,7 @@ NOTE : Make Sure You Attachted New Hard Disk While Runnig This Function On Your 
 		elif int(choice)== 7:
 			vg = input("Enter The Volume Group Name : ")
 			lv = input("Enter The Logical Volume Name : ")
-			os.system("mkfs /dev/{}/{}".format(vg,lv))
+			os.system("mkfs.ext4 /dev/{}/{}".format(vg,lv))
 
 		elif int(choice) == 8:
 			folder = input("Enter Folder Name : ")
